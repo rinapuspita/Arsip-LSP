@@ -32,13 +32,10 @@
                         <div class="form-group">
                             <label for="kategori">Kategori</label>
                             <select class="form-control" id="kategori" name="kategori">
-                                <?php foreach ($kategori as $key) :?>
-                                    <?php if ($key==$arsip['kategori']) :?>
-                                    <option value="<?= $key ?>"selected><?= $key ?></option>
-                                    <?php else : ?>
-                                        <option value="<?= $key ?>"><?= $key ?></option>
-                                    <?php endif; ?>
-                                    <?php endforeach; ?>
+                                <option value="Undangan">Undangan</option>
+                                <option value="Pengumuman">Pengumuman</option>
+                                <option value="Nota Dinas">Nota Dinas</option>
+                                <option value="Pemberitahuan">Pemberitahuan</option>    
                             </select>
                         </div>
                         <div class="form-group">
